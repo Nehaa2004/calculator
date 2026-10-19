@@ -1,12 +1,23 @@
-# calculator
-A basic calculator project written in Python.
+def add(a, b):
+    return a + b
 
-## Features
-- Addition
-- Subtraction
-- Multiplication
-- Division
-- Division-by-zero handling
 
-## Run the project
-python calculator.py
+def subtract(a, b):
+    return a - b
+
+
+def multiply(a, b):
+    return a * b
+
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Cannot divide by zero"
+    return a / b
+
+
+print("Simple Calculator")
+print("Addition:", add(10, 5))
+print("Subtraction:", subtract(10, 5))
+print("Multiplication:", multiply(10, 5))
+print("Division:", divide(10, 5))
